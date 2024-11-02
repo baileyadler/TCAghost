@@ -37,9 +37,9 @@ body{
 #spooky #body:before,
 #spooky #body:after{
     content:'';
-    position:absolutel
+    position:absolute;
    top: 130px;
-   display : inline-block;
+   display: inline-block;
    width: 36px;
    height:36px;
    border-radius:50%;
@@ -84,4 +84,44 @@ border-radius:50%;
     margin-left:20px;
     width:10px;
     height:10px;
+}
+#spooky #body #feet {
+    position:absolute;
+    display:flex;
+    bottom:-18px;
+    width:180px;
+    height:36px;
+}
+#spooky #body #feet > *,
+#spooky #body #feet::before,
+#spooky #body #feet::after{
+    content:' ';
+    width:36px;
+    height:36px;
+    background: #f2fbf1;
+    border-radius: 50%;
+}
+#shadow{
+    margin: -90px auto 0;
+    background: #252c49;
+    width:180px;
+    height:40px;
+    border-radius:50%;
+    animation: zoomy 2s infinite;
+}
+
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes zoomy {
+    0%, 100% {
+        transform:scale(1);
+    }
+    50%{transform:scale(0.8);
+    }
 }
