@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background: #b9c2d6;
+  background: #b9c2d6; /*cganged color of backgrounds*/
 }
 #container {
   width: 100%;
@@ -23,18 +23,18 @@ body {
   margin: 12% auto;
   width: 80%;
   height: 80%;
-  animation: floaty 5s infinite;
+  animation: floaty 5s infinite; /*made duration longer*/
 }
 #spooky #body {
   position: relative;
   margin: 50px auto 0;
-  width: 180px;
+  width: 180px; /*changed width of ghost*/
   height: 200px;
   background: #e6ad58;
   border-top-left-radius: 200px;
   border-top-right-radius: 100px; /*adds a bump to head*/
   animation: floaty 5s infinite;
-  box-shadow: 20px 30px 40px black;
+  box-shadow: 20px 30px 40px black; /*added box shadow on body*/
 }
 #spooky #body:before,
 #spooky #body:after {
@@ -45,7 +45,7 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #e6ad58;
+  background: #e6ad58; /*changed color of body*/
   animation: floaty 0.5s infinite;
 }
 #spooky #body:before {
@@ -107,10 +107,10 @@ body {
 #shadow {
   margin: -290px auto 0;
   background: #2f38dc;
-  width: 200px;
+  width: 200px; 
   height: 30px;
   border-radius: 50%;
-  animation: zoomy 5s infinite;
+  animation: zoomy 5s infinite; /*made duration longer*/
 }
 
 @keyframes floaty {
