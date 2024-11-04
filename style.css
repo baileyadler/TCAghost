@@ -102,12 +102,12 @@ border-radius:50%;
     border-radius: 50%;
 }
 #shadow{
-    margin: -350px auto 0;
+    margin:-550px auto 0;
     background: blue;
-    width:250px;
+    width:180px;
     height:35px;
     border-radius:50%;
-    animation: zoomy 2s infinite;
+    animation: zoomy 3s infinite;
 }
 
 @keyframes floaty {
@@ -115,13 +115,13 @@ border-radius:50%;
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-40px);
     }
 }
 @keyframes zoomy {
     0%, 100% {
-        transform:scale(1);
+        transform:scale(1.4);
     }
-    50%{transform:scale(0.8);
+    50%{transform:scale(0.9);
     }
 }
