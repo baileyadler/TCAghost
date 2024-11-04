@@ -66,18 +66,19 @@ body {
 #spooky #body #eyes:after {
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 23px;
+  height: 23px;
   background: blue; /*changed color of eyes to blue*/
   border-radius: 50%;
 }
 #spooky #body #mouth {
-  background: blue; /*changed color of mouth to blue*/
+  background: rgb(224, 92, 92); /*changed color of mouth to blue*/
   margin: 25px auto 0;
   width: 60px;
   height: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  animation: zoomy 3s infinite; /*added animation for mouth now it moves*.
 }
 #spooky #body #mouth:before {
   content: " ";
