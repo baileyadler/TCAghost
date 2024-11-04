@@ -23,17 +23,18 @@ body {
   margin: 12% auto;
   width: 80%;
   height: 80%;
-  animation: floaty 2s infinite;
+  animation: floaty 5s infinite;
 }
 #spooky #body {
   position: relative;
   margin: 50px auto 0;
   width: 180px;
-  height: 220px;
-  background: #ffdfae;
+  height: 200px;
+  background: #e6ad58;
   border-top-left-radius: 200px;
   border-top-right-radius: 100px; /*adds a bump to head*/
-  animation: floaty 2s infinite;
+  animation: floaty 5s infinite;
+  box-shadow: 20px 30px 40px black;
 }
 #spooky #body:before,
 #spooky #body:after {
@@ -44,8 +45,8 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #ffdfae;
-  animation: floaty 0.2s infinite;
+  background: #e6ad58;
+  animation: floaty 0.5s infinite;
 }
 #spooky #body:before {
   left: -18px;
@@ -67,11 +68,11 @@ body {
   display: block;
   width: 30px;
   height: 30px;
-  background: rgb(10, 74, 194); /*changed color of eyes darker*/
+  background: blue; /*changed color of eyes to blue*/
   border-radius: 50%;
 }
 #spooky #body #mouth {
-  background: rgb(10, 74, 194); /*changed color of mouth darker*/
+  background: blue; /*changed color of mouth to blue*/
   margin: 25px auto 0;
   width: 60px;
   height: 30px;
@@ -82,7 +83,7 @@ body {
   content: " ";
 
   display: block;
-  background: rgb(226, 202, 63);
+  background: rgb(225, 223, 215);
   margin-left: 20px;
   width: 10px;
   height: 10px;
@@ -100,25 +101,25 @@ body {
   content: " ";
   width: 36px;
   height: 36px;
-  background: #ffdfae;
+  background: #e6ad58;
   border-radius: 50%;
 }
 #shadow {
-  margin: -550px auto 0;
-  background: blue;
-  width: 230px;
-  height: 35px;
+  margin: -290px auto 0;
+  background: #2f38dc;
+  width: 200px;
+  height: 30px;
   border-radius: 50%;
-  animation: zoomy 2s infinite;
+  animation: zoomy 5s infinite;
 }
 
 @keyframes floaty {
   0%,
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   50% {
-    transform: translateY(-40px);
+    transform: translateY(20px);
   }
 }
 @keyframes zoomy {
